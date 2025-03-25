@@ -17,3 +17,4 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/ouvrier/logout',[Api_ouvrier_controller::class,'logout']);
     Route::post('/ouvrier/update',[Api_ouvrier_controller::class,'update']);
 });
+Route::post('/verify-login', 'AuthController@verifyLogin');
